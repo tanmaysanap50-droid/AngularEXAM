@@ -1,0 +1,17 @@
+<html ng-app="sharedApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<body>
+<div ng-controller="FirstController">
+  <h2>First Controller</h2>
+  <p>Message: {{ d.msg }}</p>
+  <input ng-model="n"><button ng-click="d.msg=n">Update Message</button>
+</div>
+<hr>
+<div ng-controller="SecondController">
+  <h2>Second Controller</h2>
+  <p>Message from Service: {{ d.msg }}</p>
+  <button ng-click="d.msg=''">Clear Message</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
