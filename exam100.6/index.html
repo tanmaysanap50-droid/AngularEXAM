@@ -1,0 +1,16 @@
+<html ng-app="searchApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+<input ng-model="searchText" placeholder="Search items...">
+
+<ul>
+<li ng-repeat="x in items | filter:searchText">{{x}}</li>
+</ul>
+
+<script src="app.js"></script>
+</body>
+</html>
